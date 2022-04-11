@@ -1,0 +1,40 @@
+package com.bolsadeideas.springboot.di.app.models.entity;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Factura {
+	private String descipcion;
+
+	@Autowired
+	private Cliente cliente;
+	private List<ItemFactura> items;
+
+	public String getDescipcion() {
+		return descipcion;
+	}
+
+	public void setDescipcion(String descipcion) {
+		this.descipcion = descipcion;
+	}
+
+	public Cliente getCliente() {
+		return cliente;
+	}
+
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
+
+	public List<ItemFactura> getItems() {
+		return items;
+	}
+
+	public void setItems(List<ItemFactura> items) {
+		this.items = items;
+	}
+
+}

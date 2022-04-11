@@ -1,0 +1,5 @@
+package com.bolsadeideas.springboot.horariointerceptor.app;
+
+public class MvcConfig {
+
+}

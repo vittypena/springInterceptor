@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<!-- Section se usa para indicar una seccion o componente que podemos reutilizar -->
+	<section th:fragment>
+		<div class="alert alert-success">
+			<span
+				th:text="'Tiempo Transcurrido: ' + ${tiempoTranscurrido} + ' en milisegundos'"></span>
+		</div>
+	</section>
+</body>
+</html>

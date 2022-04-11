@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+	<div class="alert alert-success">
+		<span
+			th:text="'Tiempo Transcurrido: ' + ${tiempoTranscurrido} + ' en milisegundos'"></span>
+	</div>
+</body>
+</html>

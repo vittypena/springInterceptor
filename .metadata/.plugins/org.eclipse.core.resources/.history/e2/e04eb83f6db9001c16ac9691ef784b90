@@ -1,0 +1,20 @@
+package com.bolsadeideas.springboot.form.app;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.HandlerInterceptor;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
+@Configuration
+public class MvcConfig implements WebMvcConfigurer{
+
+	//Inyectamos el HandlerInterceptor que es TiempoTranscurridoInterceptor, lo estamos inyectando mediante su interfaz
+	private HandlerInterceptor tiempoTranscurridoInterceptor;
+	
+	@Override
+	public void addInterceptors(InterceptorRegistry registry) {
+		//Agregamos el interceptor
+		registry.addInterceptor(tiempoTranscurridoInterceptor);
+	}
+	
+}
